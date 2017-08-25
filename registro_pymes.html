@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ProyectoPymes - Registro Pymes</title>
+    <link rel="stylesheet" href="CSS/header_style.css" />
+    <link rel="stylesheet" href="CSS/registro_pymes.css" />
+</head>
+<body>
+    <header><h1>Registro de Pymes</h1></header>
+    <nav id="linkbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">Sobre Nosotros</a></li>
+            <li><a href="registro_pymes.html">Registro PYMES</a></li>
+            <li><a href="registro_usuarios.html">Registro Usuarios</a></li>
+        </ul>
+    </nav>
+    <div></div>
+    <div>
+        <form id="form">
+            <table>
+                <tr>
+                    <td><label>Nombre PYME</label> </td>
+                    <td><input type="text" name="nombre" size="40" /> </td>
+                </tr>
+                <tr>
+                    <td><label>CUIT</label> </td>
+                    <td><input type="text" name="CUIT" size="40"/> </td>
+                </tr>
+                <tr>
+                    <td><label>Email</label> </td>
+                    <td><input type="text" name="email" size="40"/> </td>
+                </tr>
+                <tr>
+                    <td><label>Clave</label></td>
+                    <td><input type="text" name="clave" size="40"/></td>
+                </tr>
+                <tr>
+                    <td><label>Categoría</label></td>
+                    <td><select>                        
+                        <option value="otros">Otros</option>
+                        <option value="alimenticia">Alimenticia</option>
+                        <option value="calzado">Calzado</option>
+                        <option value="metalurgica">Metalúrgica</option>                      
+                        <option value="servicios">Servicios</option>
+                        <option value="textil">Textil</option>
+                        </select></td>
+                </tr>
+                
+                <tr>
+                    <td/>
+                    <td><input type="submit" value"ENVIAR" id="boton" /></td>
+                </tr>
+            
+            </table>
+        </form>
+    </div>
+    <script>
+
+        var boton = document.getElementById("boton");
+        boton.onclick = validarFormulario;
+        function validarFormulario() {
+            var formulario = document.getElementById("form");
+            var nombre = formulario.getElementsByTagName("nombre");
+            if (nombre.value == "" || nombre.value == null)
+                alert("El nombre es obligatorio");
+        }
+        }    
+    
+
+
+    </script>
+</body>
+</html>

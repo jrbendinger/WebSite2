@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    
+    <table>
+        <tr><td>Año: </td> <td id="ano"> </td> </tr>
+    </table>
+    <script>
+        function getYear() {
+            var ano = new Date().getFullYear();
+            document.getElementById("ano").innerHTML = ano;
+
+
+        }
+        document.addEventListener("DOMContentLoaded", getYear);
+
+
+
+    </script>
+    <script src="JS/7-funciones.js"></script>
+
+    <script src="JS/6-while.js"></script>
+
+    <script src="js/5-for.js"> </script>
+    
+    
+ 
+</body>
+</html>

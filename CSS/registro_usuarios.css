@@ -1,0 +1,13 @@
+﻿table {
+    background: #c7b082;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+form {
+    float: left;
+    background: #d73f3f;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

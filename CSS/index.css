@@ -1,0 +1,27 @@
+﻿#wrapper {
+    width: 1024px;
+    height: 600px;
+    background-image: url(/Images/trabajo2.jpg);
+    margin: 0 auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#left {
+    clear: both;
+    float: left;
+    width: 25%;
+    background: none;
+    color: black;
+    font-size: 2em;
+}
+
+#right {
+    float: left;
+    width: 75%;
+    background: none;
+    color: black;
+    font-size: 2em;
+}

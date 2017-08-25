@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ProyectoPymes - Registro Usuarios</title>
+    <link rel="stylesheet" href="CSS/header_style.css" />
+    <link rel="stylesheet" href="CSS/registro_usuarios.css" />
+</head>
+<body>
+    <header><h1>Registro de Usuarios</h1></header>
+    <nav id="linkbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">Sobre Nosotros</a></li>
+            <li><a href="registro_pymes.html">Registro PYMES</a></li>
+            <li><a href="registro_usuarios.html">Registro Usuarios</a></li>
+        </ul>
+    </nav>
+    <div></div>
+    <div>
+        <!--<form name="userform">-->
+            <table>
+                <tr>
+                    <td><label>Nombre</label> </td>
+                    <td><input type="text" name="name" id='nombre' accept="40" /> </td>
+                </tr>
+                <tr>
+                    <td><label>Apellido</label> </td>
+                    <td><input type="text" name="apellido" size="40" /> </td>
+                </tr>
+                <tr>
+                    <td><label>CUIT</label> </td>
+                    <td><input type="text" name="CUIT" size="40" /> </td>
+                </tr>
+                <tr>
+                    <td><label>Email</label> </td>
+                    <td><input type="text" name="email" size="40" /> </td>
+                </tr>
+                <tr>
+                    <td><label>Clave</label></td>
+                    <td><input type="text" name="clave" size="40" /></td>
+                </tr>
+                <tr>
+                    <td />
+                    <td><input type="button" id="boton" value="ENVIAR" /></td>
+                </tr>
+
+            </table>
+        <!--</form>-->
+    </div>
+    <script>
+        var boton = getElementById('boton');
+        boton.onclick = validarNombre();
+    function validarNombre() {
+    var nombre = getElementById('nombre');
+    if (nombre == 's')
+        { alert('inserte nombre') }
+        }
+
+    </script>
+    </body>
+</html>
